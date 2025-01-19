@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    internal class Delegate1
+    public class Delegate1
     {
 
 
         public delegate void BankLoan(); //declaring a delegate
         public delegate void Simple(String s);
 
-        static void Main()
+        public static void Main()
         {
 
             //introducing anonymous method to delegate
 
             BankLoan bl = delegate () //assigning delegate as a method
             {
-
 
             };
 
@@ -34,7 +33,7 @@ namespace Program
 
 
 
-            var pr = new Delegate1 ();
+            var pr = new Delegate1();
             BankLoan loan1 = pr.Terms; //assigning nonstatic method to delegate 
 
 
@@ -42,9 +41,23 @@ namespace Program
             msg += Bank;  //multi-delegate
             msg("Welcome to the Wonderful World of C# Programming!");
 
+            //delegate that returns value
+            Cbn cbn = Delegate2.Naira;
+            cbn();
+
+            //delegate with return type and return value with nested class
+            Delegate2.Gender gen = Delegate2.Person;
+            gen("Male");
+
+
+
+
 
 
         }
+
+
+        public static string Employee { get; set; }
 
         public static void Welcome(string s)
         {
@@ -61,20 +74,38 @@ namespace Program
             Console.WriteLine();
 
         }
-    }
 
 
-    
+    } 
+    public delegate int Cbn();
+
+        public class Delegate2
+        {
+
+            public delegate bool Gender(string s);
+
+            public static int Naira()
+            {
+
+                return 1000;
+            }
+
+            public static bool Person(string s)
+            {
+                return true;
+            }
 
 
-
-
-
-
-
+        }
 
 
 }
+
+
+
+
+
+
 
 
 

@@ -64,6 +64,7 @@ namespace CommercialStore1
         
         
         
+         
         
         
         
@@ -73,7 +74,6 @@ namespace CommercialStore1
         
         
         
-        }
-    }
+    
     
 }

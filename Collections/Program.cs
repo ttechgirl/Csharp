@@ -7,9 +7,36 @@ namespace Collections
     {
         static void Main()
         {
-            var a = new ArrayList();
+            var num = new ArrayList();
+            num.Add("Adewunmi");
+            num.Add(200);
 
-            Console.WriteLine();
+
+            Console.WriteLine("Number of Items: {0}", num.Count);
+
+            for(int i = 0 ; i < num.Count; i++)
+            {
+                Console.WriteLine(num[i]);
+            }
+
+            foreach (var item in num)
+            {
+                Console .WriteLine(item);
+            }
+
+
+
+
+
+
         }
+
+
+
+
+
+
+
+
     }
 }

@@ -40,5 +40,13 @@ namespace WattsALoan1
         
             }
     }
-   
+    public delegate void BankLoan(); //declaring a delegate
+
+    public class Loan
+    {
+        public void Terms()
+        {
+
+        }
+    }
 }

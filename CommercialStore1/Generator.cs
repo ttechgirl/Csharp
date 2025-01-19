@@ -23,13 +23,13 @@ public class Exercise
   {
         var ex = new Generator();
         var Value1 = 33;  // declaring an integer value
-        ex.Show(Value1);
+        ex.Show("Fuel", Value1);
 
         var Value2 = 'A'; // declaring character
-        ex.Show(Value2);
+        ex.Show("Plug", Value2);
 
         var Value3 = 20.33; //declaring double
-        ex.Show(Value3);
+        ex.Show("Switch", Value3);
 
 
         return 0;
